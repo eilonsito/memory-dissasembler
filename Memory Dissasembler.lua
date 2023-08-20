@@ -284,10 +284,6 @@ local function GetLibInformation(LibName)
   return nil
 end
 
-------------------------------------------------------------------
--- // #3
-------------------------------------------------------------------
-
 if gg.isVisible(true) then
   gg.setVisible(false)
 end
@@ -308,10 +304,6 @@ gg.alert("Getting information, Please wait >.<...")
 local TargetLib = ElfInsideMem[choice]
 local LibBase = GetLibraryBase(TargetLib)
 local Elf = GetLibInformation(TargetLib) -- This is where it parses elf data
-
-------------------------------------------------------------------
--- // #4
-------------------------------------------------------------------
 
 local SymInfoChooser = {}
 for i = 1, #Elf.Sym do
